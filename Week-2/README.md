@@ -1,6 +1,7 @@
 # Week 2 Assignments #
 
-This guide will explain how to run this weeks assignments.
+This guide will explain how to run this week's assignments.
+
 Requirements
 
     A web browser (such as Chrome or Firefox)
