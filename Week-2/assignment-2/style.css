@@ -1,0 +1,49 @@
+.square-container{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top:30%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+ 
+}
+
+.square-container div {
+    transition: transform 1s ease-in-out;
+}
+
+ .square-red  {
+
+    transform-origin: 0% 0%;
+}
+ .square-blue  {
+    transform-origin: left bottom;
+}
+
+
+  .square-container:hover .square:nth-child(2),.square:nth-child(3) {
+    transform: rotate(-90deg);
+  }
+
+  .square-container:hover .square:nth-child(1),.square:nth-child(4) {
+    transform: rotate(90deg);
+  }
+
+.square-red {
+    background-color: red;
+}
+.square-yellow {
+    background-color: yellow;
+    transform-origin: 100% 0%;
+}
+.square-blue {
+    background-color: blue;
+}
+
+.square-green {
+    background-color: green;
+    transform-origin: right bottom;
+}
