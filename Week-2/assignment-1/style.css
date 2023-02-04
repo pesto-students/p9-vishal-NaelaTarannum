@@ -1,0 +1,159 @@
+body {
+    background: linear-gradient(90deg, #eb86a4, #f3c3cd, #d587b3);
+    height: 100vh;
+  width: 100%;
+  margin: 0; 
+  color: #6E5C78 ;
+}
+
+header {
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+header * {
+    display: inline;
+}
+.logo {
+    padding: 10px;
+}
+
+header li {
+    margin:20px;
+    float: right;
+}
+
+header li a {
+    float: right;
+
+    font-weight: 400;
+    text-decoration:solid;
+}
+
+main {
+    margin-top: 80px
+}
+
+.about h1 {
+    padding-top: 80px;
+  font-size: 40px;
+
+}
+
+.about p {
+    font-size: 20px
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.articles {
+    padding: 10%;
+    display: grid;
+    column-gap: 20px;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+}
+@media screen and (max-width: 992px) {
+    .articles, .contact {
+      display: block;
+    }
+    .contact {
+        display: block !important;
+    }
+    
+  }
+
+.articles article {
+    width: 80%;
+    background-color: white;
+    padding: 10%;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+summary {
+    margin: 5%;
+}
+
+
+footer {
+    height: 50vh;
+    background-color: #6E5C78;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.pink-text {
+    color: #eb86a4;
+}
+
+
+.contact, .contact form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+
+
+.contact form input {
+    padding: 10px;
+    background-color: transparent;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact ul li{
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    
+}
+
+
+#submit {
+    background-color: white;
+    color: #6E5C78;
+}
+
+#submit:hover {
+    background-color:#eb86a4;
+    border: none;
+}
+
+
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
