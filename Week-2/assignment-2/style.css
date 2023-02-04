@@ -10,6 +10,11 @@
     grid-template-rows: repeat(2,1fr);
  
 }
+span {
+    position: fixed;
+    top:50%;
+    left:50%
+}
 
 .square-container div {
     transition: transform 1s ease-in-out;
@@ -24,11 +29,19 @@
 }
 
 
-  .square-container:hover .square:nth-child(2),.square:nth-child(3) {
+  .square-container:hover .square:nth-child(2) {
     transform: rotate(-90deg);
   }
 
-  .square-container:hover .square:nth-child(1),.square:nth-child(4) {
+  .square-container:hover .square:nth-child(3) {
+    transform: rotate(-90deg)
+  }
+
+  .square-container:hover .square:nth-child(1){
+    transform: rotate(90deg);
+  }
+
+  .square-container:hover .square:nth-child(4)  {
     transform: rotate(90deg);
   }
 
