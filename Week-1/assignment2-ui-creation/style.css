@@ -1,0 +1,109 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  height: 100%;
+}
+.grid-container {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-rows: 30vh 55vh 15vh;
+  grid-template-columns: 4rem 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main-content"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(90, 100, 100);
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.song-control-icons {
+  padding-top: 9em;
+  padding-right: 7em;
+}
+.song-control-icons span {
+  margin-right: 30px;
+  margin-bottom: 5em;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgray;
+}
+.album-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar > i {
+  margin: 2em;
+}
+
+.main-content {
+  grid-area: main-content;
+  margin-top: 1em;
+}
+.main-content table {
+  width: 100%;
+}
+
+table td {
+  padding: 1rem;
+  margin: 0;
+}
+.playlist-details {
+  color: white;
+  vertical-align: bottom;
+}
+
+.song-control-icons i {
+  bottom: 0;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #3e3eeb;
+  height: 6em;
+  display: grid;
+}
+
+footer {
+  display: grid;
+  align-items: center;
+  background-color: #191414;
+  color: white;
+  grid-template-columns: 7rem 1fr 5fr;
+  grid-template-rows: 10vh;
+}
+
+.album-cover > img {
+  height: 5em;
+  width: 5em;
+  margin-left: 1em;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+}
+.controls > i {
+  justify-content: flex-end;
+  margin-left: 5em;
+}
+
+table button {
+  background-color: transparent;
+  border: 1px solid black;
+  color: blue;
+}
