@@ -1,0 +1,9 @@
+.home {
+  height: 100vh;
+  width:100vw;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+    background-image: url("../public/14620625_5484597.jpeg");
+  }
+  
